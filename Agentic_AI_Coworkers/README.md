@@ -3,9 +3,7 @@
 Two student-focused LangGraph workflows using **FastAPI + Streamlit**, with an **optional local Ollama/Qwen3** model and **SQLite learning memory**.
 
 1. **DailyTechUpgradeAgent** finds and ranks three technical RSS items from recognized publisher feeds and creates an ~18-minute reading brief. Offline snapshot mode provides three **real, dated October 2026 articles** from publisher websites, labeled as a static snapshot rather than today's news. Live mode requires internet.
-2. **nextLevelPersonalCoachForCareerLevel** discovers remote job listings through Remotive (live mode), compares opportunity descriptions with your stated skills, conducts a **resumable 2–5-question interactive interview** that adapts follow-up questions to the concepts missed, provides feedback after every answer, and stores the full session and assessment results for a career-readiness report. Demo mode uses clearly labeled fictitious jobs/research/startup examples. You can paste a real internship/research/startup opportunity description for a skill-gap check.
-
-> **Important:** This is a basic **academic prototype**, not a finished background-running assistant. The daily brief runs when requested; you can schedule the supplied CLI script yourself. Live article summaries are based on **RSS excerpts**, not full articles; career scores are practice rubric scores, not employment forecasts. There is no account security or multi-user support. The offline article snapshot contains real historical article links. Demo opportunities are fictional and not current jobs.
+2. **nextLevelPersonalCoachForCareerLevel** discovers remote job listings through Remotive (live mode), compares opportunity descriptions with Users stated skills, conducts a **resumable 2–5-question interactive interview** that adapts follow-up questions to the concepts missed, provides feedback after every answer, and stores the full session and assessment results for a career-readiness report. Demo mode uses clearly labeled fictitious jobs/research/startup examples. You can paste a real internship/research/startup opportunity description for a skill-gap check.
 
 ## 1. Requirements
 
@@ -23,7 +21,7 @@ Two student-focused LangGraph workflows using **FastAPI + Streamlit**, with an *
 
 If you want local Ollama text generation, open **`start_backend_with_ollama.bat`** *instead of* `start_backend.bat` (first make sure Ollama and `qwen3:1.7b` work).
 
-These scripts use ports **8001/8502** so they can coexist with your earlier IntelliConsult project on 8000/8501.
+These scripts use ports **8001/8502**.
 
 ## 3. Alternative: Windows PowerShell commands
 
@@ -34,7 +32,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-**Terminal 1 — FastAPI:** (uses port 8001 to avoid conflicts with your previous IntelliConsult project)
+**Terminal 1 — FastAPI:** (uses port 8001)
 
 ```powershell
 .\.venv\Scripts\python.exe -m uvicorn backend.main:app --reload --port 8001
@@ -68,11 +66,11 @@ Use `python3 -m venv .venv`, `source .venv/bin/activate`, then `pip install -r r
 
 ## 4. Demonstrate both agents
 
-1. In **My Profile**, set your interests, existing skills and target role; save. These persist in `local_data/coworkers.sqlite`.
+1. In **My Profile**, set Users interests, existing skills and target role; save. These persist in `local_data/coworkers.sqlite`.
 2. In **Daily Tech Brief**, select *Offline article snapshot* and click **Generate my daily top 3**. Show dated article titles, source URLs, personalization and download. Then use *Live RSS* with internet to demonstrate real article titles/dates/URLs.
 3. You can mark articles **as read**; the agent saves reading history, prefers unread articles and uses missed interview concepts to adjust future recommendations.
 4. In **Career Coach**, click **Find opportunities** to see example or live opportunities. Under **Interactive career coaching session**, choose a topic (such as RAG) and 3 questions, then click **Start a new interactive interview**. Answer each question, review the rubric feedback, and respond to the **adaptive follow-up**. A chat-style transcript and a downloadable session report appear as you go. You can **End early**, or **Resume a saved interview** after refreshing the browser.
-5. In **Career Readiness Report**, refresh and show saved answers, average practice score, the number of completed interview sessions, and your action plan. You can also paste a real job/research description and click **Check skill gaps**.
+5. In **Career Readiness Report**, refresh and show saved answers, average practice score, the number of completed interview sessions, and user action plan. You can also paste a real job/research description and click **Check skill gaps**.
 
 For a **live proof**, internet is required and publisher feeds/job APIs may be unavailable or rate-limited; the app reports that and does not silently substitute sample data.
 
