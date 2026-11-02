@@ -109,19 +109,7 @@ Output is saved under `local_data/`. You may schedule the **live** command once 
 
 Test coverage includes article ranking, demo labels, skill-gap matching, FastAPI endpoints, saved assessments, **three-turn interviews, adaptive follow-ups, persistence, early ending**, and error handling. Live feeds, the job API and Ollama aren't part of offline tests.
 
-## 8. Files to submit
-
-- `README.md` — commands and walkthrough
-- `docs/architecture.png` — workflow/tool/data/memory diagram
-- `docs/PROJECT_REPORT.md` — goals, architecture, evaluation and limitations
-- `docs/DEMO_CHECKLIST.md` — demonstration script and checklist
-- `backend/`, `frontend/`, `scripts/`, `data/` — working prototype and labeled sample fixtures
-- `sample_outputs/` — offline article snapshot and fictional career-coaching sample outputs
-- `tests/` + `requirements.txt` — reproducibility
-
-The project zip excludes virtual environments, installed models and runtime databases. The assignment didn't specify a mandatory ZIP/report format; check Canvas for any additional submission rules.
-
-## 9. New: interactive coaching API (v2)
+## 9. Interactive coaching API (v2)
 
 A short Windows walkthrough is included at `docs/INTERACTIVE_COACH_QUICK_TEST.md`.
 
