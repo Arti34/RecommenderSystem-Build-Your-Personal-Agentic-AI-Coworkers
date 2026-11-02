@@ -1,0 +1,32 @@
+[
+  {
+    "title": "DEMO: Junior Machine Learning Engineer",
+    "organization": "Example employer (fictional)",
+    "url": "https://remotive.com/",
+    "published_date": "not a live job",
+    "description": "Illustrative role requiring Python, model evaluation, SQL, retrieval augmented generation (RAG), and APIs.",
+    "location": "Remote (illustrative)",
+    "type": "job example",
+    "source": "Sample fixture (not an opening)"
+  },
+  {
+    "title": "DEMO: AI Research Assistant",
+    "organization": "Example university lab (fictional)",
+    "url": "https://www.sjsu.edu/research/",
+    "published_date": "not a live opening",
+    "description": "Illustrative research role using Python, machine learning, experiment design, and research reading.",
+    "location": "Academic (illustrative)",
+    "type": "research example",
+    "source": "Sample fixture (not an opening)"
+  },
+  {
+    "title": "DEMO: AI Startup Technical Cofounder",
+    "organization": "Example startup (fictional)",
+    "url": "https://www.ycombinator.com/jobs",
+    "published_date": "not a live opening",
+    "description": "Illustrative entrepreneurship opportunity requiring prototyping, customer discovery, Python, APIs, and product strategy.",
+    "location": "Flexible (illustrative)",
+    "type": "entrepreneurship example",
+    "source": "Sample fixture (not an opening)"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
+    "url": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+    "source": "AWS Machine Learning Blog",
+    "published_date": "2026-10-23",
+    "excerpt": "This technical article explains why multi-step AI agent tasks need training signals for entire trajectories rather than single answers. It walks through multi-turn reinforcement learning using Amazon SageMaker AI and Bedrock AgentCore, including reward design, orchestration, training and evaluation."
+  },
+  {
+    "title": "Flint-interactive: A language for creating interactive data visualizations",
+    "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+    "source": "Microsoft Research",
+    "published_date": "2026-10-22",
+    "excerpt": "This research blog introduces Flint-interactive, a language for expressing interactive visualizations through semantic events and update operators. It aims to make agent-generated charts easier to explore while reducing low-level visualization code and debugging effort."
+  },
+  {
+    "title": "A curriculum for post-training agents",
+    "url": "https://huggingface.co/blog/merve/train-agents",
+    "source": "Hugging Face Blog",
+    "published_date": "2026-10-20",
+    "excerpt": "This guide outlines a curriculum for post-training agents using supervised fine-tuning, distillation and reinforcement learning. Agentic post-training considers tool use and the sequence of turns rather than evaluating one answer in isolation."
+  }
+]
